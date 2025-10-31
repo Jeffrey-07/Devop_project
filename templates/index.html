@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zaire Tile Manufacturer | Athangudi Tiles</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #fdfaf6;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #d35400, #f39c12);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
+
+    nav {
+      background: #2c3e50;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f39c12;
+    }
+
+    section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .hero {
+      text-align: center;
+      background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80') center/cover;
+      color: white;
+      padding: 6rem 1rem;
+      border-radius: 15px;
+      margin: 2rem auto;
+    }
+
+    .hero h2 {
+      font-size: 2.2rem;
+      background: rgba(0, 0, 0, 0.6);
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product-card h3 {
+      background: #f39c12;
+      color: white;
+      padding: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .product-card p {
+      padding: 1rem;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      margin: 0.5rem 0;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      .hero h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Zaire Tile Manufacturer</h1>
+    <p>Traditional Athangudi Tiles Crafted with Perfection</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home" class="hero">
+    <h2>Bringing the timeless beauty of Athangudi tiles to your modern spaces</h2>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      At <strong>Zaire Tile Manufacturer</strong>, we specialize in crafting authentic 
+      <em>Athangudi tiles</em> that reflect Tamil Nadu’s rich artistic tradition. 
+      Every tile is handmade using natural colors, ensuring unique patterns and durability.
+    </p>
+  </section>
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="{{ url_for('static', filename='koditile.jpg') }}" alt="Tile 1">
+        <h3>Classic Floral</h3>
+        <p>Traditional floral design with rich red and yellow hues.</p>
+      </div>
+
+      <div class="product-card">
+        <img src="{{ url_for('static', filename='geometric.jpg') }}" alt="Tile 2">
+        <h3>Geometric Charm</h3>
+        <p>Perfect blend of modern geometry and vintage style.</p>
+      </div>
+
+      <div class="product-card">
+        <img src="{{ url_for('static', filename='royal.jpg') }}" alt="Tile 3">
+        <h3>Royal Heritage</h3>
+        <p>Handcrafted for palatial interiors with elegant detailing.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@zairetiles.com</p>
+    <p>Phone: +91 98765 43210</p>
+    <p>Address: Athangudi Village, Karaikudi, Tamil Nadu</p>
+  </section>
+
+  <footer>
+    © 2025 Zaire Tile Manufacturer | All Rights Reserved
+  </footer>
+</body>
+</html>
